@@ -1,0 +1,7 @@
+<h1>LIST OF ARTICLES</h1>
+
+<% @articles.each do |i| %>
+  <h4><%= link_to("#{i.title}", article_path(i.id)) %></h4>
+<% end %>
+
+<p><%= link_to("NEW ARTICLE", new_article_path) %></p

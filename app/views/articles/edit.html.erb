@@ -1,0 +1,13 @@
+<%= form_for(@article) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.submit %>
+  <div>
+    <%= f.label :content %>
+    <div>
+      <%= f.text_area :content %>
+    </div>
+  </div>
+<% end %>
+
+<p><%= link_to("BACK TO LIST", articles_path) %></p>
